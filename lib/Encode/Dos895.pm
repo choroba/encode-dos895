@@ -7,12 +7,12 @@ Encode::Dos895
 
 =head1 SYNOPSIS
 
-use Encode;
-use Encode::Dos895;
+  use Encode;
+  use Encode::Dos895;
 
-my $in = "r\N{LATIN SMALL LETTER Y WITH ACUTE}"
-       . "\N{LATIN SMALL LETTER Z WITH CARON}e";
-die unless encode('dos-895', $in) eq "\x72\x98\x91\x65";
+  my $in = "r\N{LATIN SMALL LETTER Y WITH ACUTE}"
+         . "\N{LATIN SMALL LETTER Z WITH CARON}e";
+  die unless encode('dos-895', $in) eq "\x72\x98\x91\x65";
 
 =head1 DESCRIPTION
 
